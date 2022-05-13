@@ -1,9 +1,13 @@
 @import "./common/global.less";
+@rs-view-margin: 20px;
+@rs-view-padding: 50px;
+@rs-view-content-margin: 0;
+@rs-view-content-padding: 0;
 
 .rs-view {
   width: 100%;
   background: #fff;
-  padding: 20px 0px;
+  padding: 20px 50px;
 
   .header {
     width: 100%;
@@ -32,15 +36,16 @@
   .title {
     display: flex;
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-padding;
+    margin-right: @rs-view-content-padding;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
   }
 
   .lr-container {
-    padding: 10px 0 20px;
+    padding: 0;
     display: flex;
+    margin-top: 10px;
   }
 
   p {
@@ -52,14 +57,14 @@
     color: #747474;
     // margin-top: 8px;
     margin-bottom: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-padding;
+    margin-right: @rs-view-content-padding;
   }
 
   h1 {
     font-size: 30px;
     margin-bottom: 12px;
-    margin: 0 50px;
+    margin: 0 @rs-view-content-padding;
   }
 
   h2 {
@@ -67,18 +72,18 @@
     font-size: 20px;
     color: var(--bg);
     border-bottom: 1px solid var(--bg);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-padding;
+    margin-right: @rs-view-content-padding;
   }
 
   h3 {
     font-size: 14px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-padding;
+    margin-right: @rs-view-content-padding;
   }
 
   ul {
-    margin: 0 50px;
+    margin: 0 @rs-view-content-padding;
   }
 
   li {
@@ -87,7 +92,7 @@
     color: #747474;
   }
   li ul {
-    margin: 0 50px;
+    margin: 0 @rs-view-content-padding;
   }
   .icon {
     fill: #747474;
@@ -121,5 +126,9 @@
     color: rgba(255, 255, 255, 0.25);
     cursor: not-allowed;
     pointer-events: none;
+  }
+
+  table {
+    width: 100%;
   }
 }

@@ -1,4 +1,8 @@
 @import "./common/global.less";
+@rs-view-margin: 0;
+@rs-view-padding: 50px;
+@rs-view-content-margin: 0;
+@rs-view-content-padding: 0;
 
 .rs-view {
   width: 100%;
@@ -6,6 +10,9 @@
   flex-direction: column;
   background: #fff;
   -webkit-text-size-adjust: none;
+  margin: $rs-view-margin;
+  padding-left: $rs-view-padding;
+  padding-right: $rs-view-padding;
 
   h1 {
     border-bottom: 1px solid #ddd;
@@ -57,8 +64,8 @@
 
   .title {
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: $rs-view-content-margin;
+    margin-right: $rs-view-content-margin;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
   }
@@ -73,8 +80,8 @@
   p {
     // margin-top: 8px;
     margin-bottom: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-margin;
+    margin-right: @rs-view-content-margin;
     font-size: 14px;
   }
 
@@ -82,7 +89,7 @@
     font-size: 28px;
     margin: 0;
     padding: 20px 0;
-    margin: 0 50px;
+    margin: 0 @rs-view-content-margin;
   }
   .h2_block {
     position: relative;
@@ -139,8 +146,8 @@
     position: relative;
     line-height: 1.8;
     overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-margin;
+    margin-right: @rs-view-content-margin;
     font-size: 15px;
   }
 

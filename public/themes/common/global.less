@@ -1,9 +1,10 @@
+@import "var";
+
 * {
-  font-family: 'pingfang-sc' !important;
+  font-family: 'Helvetica Neue', 'pingfang-sc' !important;
 }
 
 .rs-view {
-
   .left {
     flex: auto;
     text-align: left;
@@ -49,8 +50,8 @@
     position: relative;
     line-height: 20px;
     overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: @rs-view-content-margin;
+    margin-right: @rs-view-content-margin;
     font-size: 13px;
     font-weight: 500;
   }
@@ -72,7 +73,7 @@
   }
   ol {
     overflow: hidden;
-    margin: 0 50px;
+    margin: 0 @rs-view-content-margin;
     li {
       list-style: decimal inside;
     }

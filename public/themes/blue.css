@@ -1,5 +1,5 @@
 * {
-  font-family: 'pingfang-sc' !important;
+  font-family: 'Helvetica Neue', 'pingfang-sc' !important;
 }
 .rs-view .left {
   flex: auto;
@@ -46,8 +46,8 @@
   position: relative;
   line-height: 20px;
   overflow: hidden;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
   font-size: 13px;
   font-weight: 500;
 }
@@ -69,7 +69,7 @@
 }
 .rs-view ol {
   overflow: hidden;
-  margin: 0 50px;
+  margin: 0 0;
 }
 .rs-view ol li {
   list-style: decimal inside;
@@ -86,7 +86,7 @@
 .rs-view {
   width: 100%;
   background: #fff;
-  padding: 20px 0px;
+  padding: 20px 50px;
 }
 .rs-view .header {
   width: 100%;
@@ -114,14 +114,15 @@
 .rs-view .title {
   display: flex;
   margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 .rs-view .lr-container {
-  padding: 10px 0 20px;
+  padding: 0;
   display: flex;
+  margin-top: 10px;
 }
 .rs-view p {
   display: block;
@@ -129,29 +130,29 @@
   font-size: 14px;
   color: #747474;
   margin-bottom: 0px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .rs-view h1 {
   font-size: 30px;
   margin-bottom: 12px;
-  margin: 0 50px;
+  margin: 0 0;
 }
 .rs-view h2 {
   position: relative;
   font-size: 20px;
   color: var(--bg);
   border-bottom: 1px solid var(--bg);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .rs-view h3 {
   font-size: 14px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .rs-view ul {
-  margin: 0 50px;
+  margin: 0 0;
 }
 .rs-view li {
   font-size: 13px;
@@ -159,7 +160,7 @@
   color: #747474;
 }
 .rs-view li ul {
-  margin: 0 50px;
+  margin: 0 0;
 }
 .rs-view .icon {
   fill: #747474;
@@ -193,4 +194,7 @@
   color: rgba(255, 255, 255, 0.25);
   cursor: not-allowed;
   pointer-events: none;
+}
+.rs-view table {
+  width: 100%;
 }
