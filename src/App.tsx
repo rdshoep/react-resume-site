@@ -18,14 +18,14 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <HeaderCommonBar></HeaderCommonBar>
+            {/*<HeaderCommonBar></HeaderCommonBar>*/}
             <HeaderBar></HeaderBar>
             {/* <div className="rs-body"> */}
               <Main></Main>
             {/* </div> */}
           </Route>
           <Route path="/square">
-            <HeaderCommonBar></HeaderCommonBar>
+            {/*<HeaderCommonBar></HeaderCommonBar>*/}
             <div className="rs-body">
               <Square></Square>
             </div>
