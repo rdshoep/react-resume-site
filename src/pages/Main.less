@@ -1,7 +1,7 @@
 .rs-container {
   display: flex;
   width: 100%;
-  min-width: 1000px;
+  //min-width: 1000px;
   height: calc(100% - 90px);
   position: relative;
   flex-direction: column;
@@ -73,4 +73,8 @@
 }
 .Resizer.disabled:hover {
   border-color: transparent;
+}
+
+.SplitPane .rs-view-wrapper {
+  overflow-x: hidden;
 }
